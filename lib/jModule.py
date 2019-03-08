@@ -83,45 +83,6 @@ footer = """<section id="footer">
     </section>
 """
 
-slideShow = """<section class="slideShow">
-    <div class="slideRow" id="slide1">
-    <div class="column">
-        <div class="module text">
-            <h1>Hello world! 1</h1>
-        </div>
-    </div>
-    </div>
-    <div class="slideRow" id="slide2">
-    <div class="column">
-        <div class="module text">
-            <h1>Hello world! 2</h1>
-        </div>
-    </div>
-    </div>
-    <div class="slideRow" id="slide3">
-    <div class="column">
-        <div class="module text">
-            <h1>Hello world! 3</h1>
-        </div>
-    </div>
-    </div>
-    <div class="slideRow" id="slide4">
-    <div class="column">
-        <div class="module text">
-            <h1>Hello world! 4</h1>
-        </div>
-    </div>
-    </div>
-    <div class="slideRow" id="slide5">
-    <div class="column">
-        <div class="module text">
-            <h1>Hello world! 5</h1>
-        </div>
-    </div>
-    </div>
-</section>
-"""
-
 # TEXT MODULES
 
 oneColumnText = """<section class="oneColumnText">
