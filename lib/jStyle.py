@@ -25,6 +25,11 @@ html, body {
     color:white;
 }
 
+.oneColumnBigText {
+    text-align:center;
+    margin:50px 0 0 0;
+}
+
 #footer {
     position:absolute;
     background-color:#263238;
@@ -99,10 +104,6 @@ figure {
     text-align:center;
 }
 
-.portfolioText {
-    text-align:left;
-}
-
 .ctaFigure, .portfolioFigure {
     margin-bottom:-25px;
 }
@@ -119,17 +120,8 @@ figure {
     margin:0 auto;
 }
 
-.portfolioText .button {
-    margin:initial;
-}
-
-.menuDescription {
-    font-style:italic;
-}
-
-.menuPrice {
-    font-weight:bold;
-    font-size:1.2em;
+hr {
+    margin:50px 150px 0 150px;
 }
 
 /* TYPOGRAPHY */
@@ -140,6 +132,39 @@ p + h1, p + h2, p + h3, p + h4, p + h5, p + h6 {
 
 h1, h2, h3, h4, h5, h6 {
     font-family:'Roboto', Arial, sans-serif;
+}
+
+a {
+    color:lightblue;
+    text-decoration:none;
+}
+
+#footer ul {
+    list-style-type:none;
+    padding:0;
+}
+
+.portfolioText {
+    text-align:left;
+}
+
+.portfolioText .button {
+    margin:initial;
+}
+
+.bigText {
+    text-align:center;
+    font-size:2em;
+    line-height:1.4em;
+}
+
+.menuDescription {
+    font-style:italic;
+}
+
+.menuPrice {
+    font-weight:bold;
+    font-size:1.2em;
 }
 
 /* SLIDESHOW STYLING */

@@ -1,4 +1,4 @@
-# NAV MODULE - 'N' MODULE DESIGNATION
+# NAV MODULE
 
 navigation = """<section class="nav">
     <div class="luxbar luxbar-static">
@@ -25,7 +25,7 @@ navigation = """<section class="nav">
 </section>
 """
 
-# HERO MODULES - 'H' MODULE DESIGNATION
+# HERO MODULES
 
 hero = """<section class="hero">
     <div class="row">
@@ -38,46 +38,91 @@ hero = """<section class="hero">
 </section>
 """
 
+# FOOTER MODULES
+
+footer = """<section id="footer">
+        <div class="row">
+            <div class="column">
+                <div class="module">
+                    <h2>Joist</h2>
+                    <ul>
+                        <li><a href="#">About Joist</a></li>
+                        <li><a href="#">Our products</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Social impact</a></li>
+                        <li><a href="#">Affiliates</a></li>
+                        <li><a href="#">Sitemap</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="column">
+                <div class="module">
+                    <h2>My Joist</h2>
+                    <ul>
+                        <li><a href="#">My account</a></li>
+                        <li><a href="#">Order status</a></li>
+                        <li><a href="#">Design Insider</a></li>
+                        <li><a href="#">Rewards</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="column">
+                <div class="module">
+                    <h2>Docs and FAQ</h2>
+                    <ul>
+                        <li><a href="#">User guide</a></li>
+                        <li><a href="#">Integration guide</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Billing</a></li>
+                        <li><a href="#">Support (USA)</a></li>
+                        <li><a href="#">International support</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+"""
+
 slideShow = """<section class="slideShow">
     <div class="slideRow" id="slide1">
-      <div class="column">
-          <div class="module text">
-              <h1>Hello world! 1</h1>
-          </div>
-      </div>
+    <div class="column">
+        <div class="module text">
+            <h1>Hello world! 1</h1>
+        </div>
+    </div>
     </div>
     <div class="slideRow" id="slide2">
-      <div class="column">
-          <div class="module text">
-              <h1>Hello world! 2</h1>
-          </div>
-      </div>
+    <div class="column">
+        <div class="module text">
+            <h1>Hello world! 2</h1>
+        </div>
+    </div>
     </div>
     <div class="slideRow" id="slide3">
-      <div class="column">
-          <div class="module text">
-              <h1>Hello world! 3</h1>
-          </div>
-      </div>
+    <div class="column">
+        <div class="module text">
+            <h1>Hello world! 3</h1>
+        </div>
+    </div>
     </div>
     <div class="slideRow" id="slide4">
-      <div class="column">
-          <div class="module text">
-              <h1>Hello world! 4</h1>
-          </div>
-      </div>
+    <div class="column">
+        <div class="module text">
+            <h1>Hello world! 4</h1>
+        </div>
+    </div>
     </div>
     <div class="slideRow" id="slide5">
-      <div class="column">
-          <div class="module text">
-              <h1>Hello world! 5</h1>
-          </div>
-      </div>
+    <div class="column">
+        <div class="module text">
+            <h1>Hello world! 5</h1>
+        </div>
+    </div>
     </div>
 </section>
 """
 
-# TEXT MODULES - 'T' MODULE DESIGNATION
+# TEXT MODULES
 
 oneColumnText = """<section class="oneColumnText">
     <div class="row">
@@ -85,6 +130,18 @@ oneColumnText = """<section class="oneColumnText">
             <div class="module text">
                 <h2>Hello world!</h2>
                 <p>Mauris ultrices, nisl sed tincidunt imperdiet, nisi ipsum luctus dui, ac condimentum orci magna ut nisi. Mauris rutrum varius sapien id mollis. Duis porta enim id ligula porttitor, eget cursus ipsum tincidunt. Donec venenatis consectetur ligula. Integer eget condimentum elit, eu varius enim. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aenean vel tempus quam.</p>
+            </div>
+        </div>
+    </div>
+</section>
+"""
+
+oneColumnBigText = """<section class="oneColumnBigText">
+    <div class="row">
+        <div class="column">
+            <div class="module text">
+                <span class="bigText">Mauris ultrices, nisl sed tincidunt imperdiet, nisi ipsum luctus dui, ac condimentum orci magna ut nisi.</span>
+                <hr>
             </div>
         </div>
     </div>
@@ -211,7 +268,7 @@ menu = """<section class="menu">
 </section>
 """
 
-# TEXT AND/OR IMAGE MODULES - 'I' MODULE DESIGNATION
+# TEXT AND/OR IMAGE MODULES
 
 textImage = """<section class="textImage">
     <div class="row">
@@ -293,7 +350,7 @@ fullImageText = """<section class="fullImageText">
 </section>
 """
 
-# PORTFOLIO MODULES - 'P' DESIGNATION
+# PORTFOLIO MODULES
 
 portfolio = """<section class="portfolio">
     <div class="row">
@@ -349,7 +406,61 @@ portfolio = """<section class="portfolio">
 </section>
 """
 
-# CTA MODULES - 'C' MODULE DESIGNATION
+portfolioTwo = """<section class="portfolioTwo">
+    <div class="row">
+        <div class="column">
+            <div class="module image">
+                <h2>Hello world!</h2>
+                <figure class="portfolioFigure">
+                    <img src="https://images.unsplash.com/photo-1470087167738-6aa485ff65dc?ixlib=rb-0.3.5&s=df0adf58c0dfbf59749b04fa7557ac97&auto=format&fit=crop&w=1351&q=80" alt="" title="">
+                </figure>
+            </div>
+            <div class="module portfolioText">
+                <p>Mauris ultrices, nisl sed tincidunt imperdiet, nisi ipsum luctus dui.</p>
+                <a href="#" class="button">Button</a>
+            </div>
+        </div>
+        <div class="column">
+            <div class="module image">
+                <h2>Hello world!</h2>
+                <figure class="portfolioFigure">
+                    <img src="https://images.unsplash.com/photo-1470087167738-6aa485ff65dc?ixlib=rb-0.3.5&s=df0adf58c0dfbf59749b04fa7557ac97&auto=format&fit=crop&w=1351&q=80" alt="" title="">
+                </figure>
+            </div>
+            <div class="module portfolioText">
+                <p>Mauris ultrices, nisl sed tincidunt imperdiet, nisi ipsum luctus dui.</p>
+                <a href="#" class="button">Button</a>
+            </div>
+        </div>
+        <div class="column">
+            <div class="module image">
+                <h2>Hello world!</h2>
+                <figure class="portfolioFigure">
+                    <img src="https://images.unsplash.com/photo-1470087167738-6aa485ff65dc?ixlib=rb-0.3.5&s=df0adf58c0dfbf59749b04fa7557ac97&auto=format&fit=crop&w=1351&q=80" alt="" title="">
+                </figure>
+            </div>
+            <div class="module portfolioText">
+                <p>Mauris ultrices, nisl sed tincidunt imperdiet, nisi ipsum luctus dui.</p>
+                <a href="#" class="button">Button</a>
+            </div>
+        </div>
+        <div class="column">
+            <div class="module image">
+                <h2>Hello world!</h2>
+                <figure class="portfolioFigure">
+                    <img src="https://images.unsplash.com/photo-1470087167738-6aa485ff65dc?ixlib=rb-0.3.5&s=df0adf58c0dfbf59749b04fa7557ac97&auto=format&fit=crop&w=1351&q=80" alt="" title="">
+                </figure>
+            </div>
+            <div class="module portfolioText">
+                <p>Mauris ultrices, nisl sed tincidunt imperdiet, nisi ipsum luctus dui.</p>
+                <a href="#" class="button">Button</a>
+            </div>
+        </div>
+    </div>
+</section>
+"""
+
+# CTA MODULES
 
 threeColumnCta = """<section class="threeColumnCta">
     <div class="row">
@@ -419,35 +530,3 @@ threeColumnCtaWithImages = """<section class="threeColumnCtaWithImages">
     </div>
 </section>
 """
-
-# OTHER - NOT DISPLAYED IN UI
-
-jBootstrapCarousel = """<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-  <ol class="carousel-indicators">
-    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-  </ol>
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img class="d-block w-100" src="https://images.unsplash.com/photo-1522199794616-8a62b541f762?ixlib=rb-0.3.5&s=30c1c31712f787765e8f383203c74e01&auto=format&fit=crop&w=1052&q=80" alt="First slide">
-    </div>
-    <div class="carousel-item">
-      <img class="d-block w-100" src="https://images.unsplash.com/photo-1491451231005-ec20221dd520?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=38fb233251b0752fd44f76357c3b0cd8&auto=format&fit=crop&w=1350&q=80" alt="Second slide">
-    </div>
-    <div class="carousel-item">
-      <img class="d-block w-100" src="https://images.unsplash.com/photo-1512925971204-7b6457b669d9?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=bf261002886950caaf03a67d3f1ba542&auto=format&fit=crop&w=634&q=80" alt="Third slide">
-    </div>
-  </div>
-  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
-</div>
-"""
-
-templateAll = navigation + hero + slideShow + oneColumnText + twoColumnText + threeColumnText + fourColumnText + menu + imageText + textImage + image + textFullImage + fullImageText + portfolio + threeColumnCta + threeColumnCtaWithImages
