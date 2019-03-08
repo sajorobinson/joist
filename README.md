@@ -4,94 +4,68 @@
 
 ## Overview
 
-Joist can create beautiful, simple, and mobile-responsive website templates through a command-line interface.
+Joist can create simple, mobile-responsive website templates through a command-line interface.
 
-The purpose of Joist is not to create ready-to-publish websites. Rather, the purpose of Joist is to create the skeleton a website very quickly.
+The purpose of Joist is to create the skeleton of a basic website very quickly. The user can put together pages from modules and templates. Joist also creates a default stylesheet and a custom stylesheet.
 
-Once Joist creates the skeleton of the website, the web designer can quickly alter it to their needs. Joist lessens the need to set up a website's basic structure and style.
+## How to use
 
-Joist is good for creating basic websites in HTML, CSS, and JavaScript. It's also good for creating rapid prototypes of websites.
+You must have at least Python 3.6.5 to use Joist. The steps below assume that you're running Joist as a script instead of as a compiled executable.
 
-Joist is not designed for creating complete, ready-to-publish websites. It's goal is to make the web design process easier by reducing some of the grunt work.
-
-## Use
-
-You must have at least Python 3.6.5 to use Joist.
-
-1. Open a command-line interface.
+1. Open a command-line interface
 2. Navigate to the directory where you downloaded Joist.
-3. Type the following command: `python3 joist.py`.
-4. Joist will ask you for a file name. Input a filename in the following format: `file_name.html`.
-5. Joist will ask you how many elements you want on your website. Provide an integer value.
-6. Joist will ask you to choose elements for your website. Type `Help` for a list of options.
-7. Input element choices into the command-line interface until the program closes.
+3. Run Joist by typing `python3 joist.py` (Mac / Linux) or `python joist.py` (Windows).
+4. Follow prompts to create filename, choose whether you want to build from a template/modules, and how many modules you want.
+5. Type `Help` whenever you want a list of options.
+6. Select elements or templates until the program quits.
 
-## Output
+## Expected output
 
 Once you create your website, four files should appear in the directory where you downloaded and ran Joist:
 
-* index.html
+* NameOfYourFile.html
 * style.css
 * customStyle.css
 * navStyle.css
 
-The *index.html* file is your web page.
+The *NameOfYourFile.html* file is your web page.
 
 The *style.css* file is your Joist stylesheet with all of Joist's default styles.
 
 The *customStyle.css* file is a blank stylesheet for you to create custom styles outside the default Joist stylesheet.
 
-The **navStyle.css** file is a file that contains all the styles for the navigation bar.
+The *navStyle.css* file is a file that contains all the styles for the navigation bar.
 
-## Structure
+## How is Joist organized?
 
-Joist is organized into four parts:
+Joist is organized into different modules that help build the web pages:
 
-* *joist.py*
-* lib
-    * *jHead.py*
-    * *jModule.py*
-    * *jStyle.py*
+| File           | Description                                              |
+|----------------|----------------------------------------------------------|
+| joist.py       | Main script                                              |
+| lib\jhead.py   | Builts out the head/end of the HTML document             |
+| lib\jModule.py | Contains the HTML modules used for building the web page |
+| lib\jPage.py   | Combines modules from jModule to create templates        |
+| jStyle.py      | Contains the stylesheets used to make the site look good |
 
-### joist.py
+## Goals
 
-*Joist.py* is the main file of Joist. It drives the user interface and functions that write the web and CSS pages.
-
-### lib
-
-The lib folder contains all of the module files for Joist.
-
-Each module of Joist contains some HTML, CSS, or JavaScript that can be written on the page.
-
-#### jHead.py
-
-The module *jHead.py* contains variables for the head of the HTML document, the closing tags, and a time stamp to record when the web file was created.
-
-#### jModule.py
-
-The module *jModule.py* contains variables for all of the sections of the HTML document.
-
-#### jStyle.py
-
-The module *jStyle.py* contains variables for the default Joist stylesheet and the custom, blank user style sheet.
+| Goal                  | Description                                                                                                                                  | Implemented? |
+|-----------------------|----------------------------------------------------------------------------------------------------------------------------------------------|--------------|
+| Create CSS templates  | The user should be able to choose from multiple CSS templates to significantly alter the style of the website.                               | No           |
+| Create site templates | Site templates have been implemented sort of, but there should be a wide variety of sites the user can choose from.                          | No           |
+| Create a custom nav   | Right now, Joist uses [LuxBar](https://github.com/balzss/luxbar), which is really nice, but it would be better if we had something original. | No           |
+| Create a slide show   | Right now, there is no slideshow module. This is something we need to implement as it's very basic website design.                           | No           |
+| Create GUI            | An eventual goal of mine as a programmer is to move beyond command line interfaces and make a GUI.                                           | No           |
 
 ## Versions
 
-| Version           | Codename                 | Date              |
-|-------------------|--------------------------|-------------------|
-| 0.6               |                          | 06 - 16 - 2018    |
-| 0.5               |                          | 05 - 11 - 2018    |
-| 0.4               |                          | 05 - 08 - 2018    |
-| 0.3               |                          | 05 - 07 - 2018    |
-| 0.2               |                          | 05 - 07 - 2018    |
-| 0.1               |                          | 05 - 04 - 2018    |
-
-## Retrospective
-
-My goal for this project was to create a tool I could use to quickly make simple websites.
-
-When I set out to work on this project, I decided that most of my work would be writing HTML and CSS that could be altered quickly enough for templating but full-featured enough to be used out of the box.
-
-The default style sheets for this project represent one template for the underlying HTML, which is logically structured into rows, columns, and modules. I'm happy enough with the command line interface for this project. My future work on this project will be to create new templates for it. When I learn more about Python, I may revisit this project to give it a UI.
-
-This project is there first where I've focused significantly on modularity. When I was first learning Python, I tended to put everything into one file. Anecdotally, I found that putting my page modules, style modules, etc, in different places helped me conceptualize the project better as a whole.
+| Version | Codename | Date           |
+|---------|----------|----------------|
+| 0.7     |          | 03 - 07 - 2019 |
+| 0.6     |          | 06 - 16 - 2018 |
+| 0.5     |          | 05 - 11 - 2018 |
+| 0.4     |          | 05 - 08 - 2018 |
+| 0.3     |          | 05 - 07 - 2018 |
+| 0.2     |          | 05 - 07 - 2018 |
+| 0.1     |          | 05 - 04 - 2018 |
