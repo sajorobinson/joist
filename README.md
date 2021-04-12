@@ -43,7 +43,7 @@ Joist is organized into different modules that help build the web pages:
 | File           | Description                                              |
 |----------------|----------------------------------------------------------|
 | joist.py       | Main script                                              |
-| lib\jhead.py   | Builts out the head/end of the HTML document             |
+| lib\jhead.py   | Built out the head/end of the HTML document              |
 | lib\jModule.py | Contains the HTML modules used for building the web page |
 | lib\jPage.py   | Combines modules from jModule to create templates        |
 | jStyle.py      | Contains the stylesheets used to make the site look good |
