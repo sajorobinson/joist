@@ -8,6 +8,8 @@ Joist can create simple, mobile-responsive website templates through a command-l
 
 The purpose of Joist is to create the skeleton of a basic website very quickly. The user can put together pages from modules and templates. Joist also creates a default stylesheet and a custom stylesheet.
 
+Joist works by calling on a library of pre-assembled snippets of HTML. You can use the program to arrange the HTML snippets in various configurations.
+
 ## How to use
 
 You must have at least Python 3.6.5 to use Joist. The steps below assume that you're running Joist as a script instead of as a compiled executable.
